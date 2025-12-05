@@ -1,3 +1,4 @@
+// src/App.jsx
 import React, { useContext } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
@@ -23,10 +24,8 @@ function AppRoutes() {
 
   return (
     <>
-      {/* Navbar always visible */}
       <Navbar isLoggedIn={isLoggedIn} players={players} onLogout={handleLogout} />
 
-      {/* Main Routes */}
       <Routes>
         <Route path="/" element={<LoginPage />} />
         <Route
@@ -48,7 +47,6 @@ function AppRoutes() {
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
 
-      {/* Footer always visible on all pages */}
       <Footer />
     </>
   );

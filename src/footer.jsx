@@ -1,3 +1,4 @@
+// src/Footer.jsx
 import React from "react";
 
 export default function Footer() {
@@ -7,5 +8,4 @@ export default function Footer() {
     </footer>
   );
 }
-
 
